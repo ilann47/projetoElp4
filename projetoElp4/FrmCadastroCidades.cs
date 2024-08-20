@@ -8,15 +8,11 @@ using System.Windows.Forms;
 
 namespace projetoElp4
 {
-    public partial class FrmConsultaPaises : projetoElp4.FrmConsulta
+    public partial class FrmCadastroCidades : projetoElp4.FrmCadastro
     {
-        public FrmConsultaPaises()
+        public FrmCadastroCidades()
         {
             InitializeComponent();
-        }
-        public override void SetFrmCadastro(Object frm)
-        {
-
         }
     }
 }

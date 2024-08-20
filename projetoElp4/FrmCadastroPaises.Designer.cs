@@ -1,6 +1,6 @@
 ﻿namespace projetoElp4
 {
-    partial class FrmCadastro
+    partial class FrmCadastroPaises
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,17 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // FrmCadastro
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Name = "FrmCadastro";
-            this.Load += new System.EventHandler(this.FrmCadastro_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            this.components = new System.ComponentModel.Container();
         }
 
         #endregion

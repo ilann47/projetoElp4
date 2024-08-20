@@ -9,25 +9,31 @@ namespace projetoElp4
 
     internal class Interfaces
     {
-        FrmConsultaPaises ofrmConsultaPaises;
-        FrmConsultaCidades ofrmConsultaCidades;
-        FrmConsultaEstados ofrmConsultaEstados;
+    //    FrmConsultaPaises ofrmConsultaPaises;
+  //      FrmConsultaCidades ofrmConsultaCidades;
+//        FrmConsultaEstados ofrmConsultaEstados;
+        FrmCadastroCidades ofrmCadastroCidades;
+        FrmCadastroEstados ofrmCadastroEstados;
+        FrmCadastroPaises ofrmCadastroPaises;
         public Interfaces() {
-            ofrmConsultaCidades = new FrmConsultaCidades();
-            ofrmConsultaPaises = new FrmConsultaPaises();
-            ofrmConsultaEstados = new FrmConsultaEstados();
+      //      ofrmConsultaCidades = new FrmConsultaCidades();
+        //    ofrmConsultaPaises = new FrmConsultaPaises();
+          //  ofrmConsultaEstados = new FrmConsultaEstados();
+            ofrmCadastroCidades = new FrmCadastroCidades();
+            ofrmCadastroEstados = new FrmCadastroEstados();
+            ofrmCadastroPaises = new FrmCadastroPaises();
         }
         public void PecaPaises()
         {
-            ofrmConsultaPaises.Show();
+  //          ofrmConsultaPaises.ShowDialog();
         }
         public void PecaCidades()
         {
-            ofrmConsultaCidades.Show();
+  //          ofrmConsultaCidades.Show();
         }
         public void PecaEstados()
         {
-            ofrmConsultaEstados.Show();
+   //         ofrmConsultaEstados.Show();
         }
     }
 }

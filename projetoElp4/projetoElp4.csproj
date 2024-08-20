@@ -52,29 +52,29 @@
     <Compile Include="FrmCadastro.Designer.cs">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCadastroCidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroCidades.Designer.cs">
+      <DependentUpon>FrmCadastroCidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroEstados.Designer.cs">
+      <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCadastroPaises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCadastroPaises.Designer.cs">
+      <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmConsulta.Designer.cs">
       <DependentUpon>FrmConsulta.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmConsultaCidades.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmConsultaCidades.Designer.cs">
-      <DependentUpon>FrmConsultaCidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmConsultaEstados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmConsultaEstados.Designer.cs">
-      <DependentUpon>FrmConsultaEstados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmConsultaPaises.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmConsultaPaises.Designer.cs">
-      <DependentUpon>FrmConsultaPaises.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPai.cs">
       <SubType>Form</SubType>

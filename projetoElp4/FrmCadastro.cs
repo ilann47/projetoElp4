@@ -14,5 +14,35 @@ namespace projetoElp4
         {
             InitializeComponent();
         }
+        public virtual void ConhecaObj(object obj)
+        {
+
+        }
+        public virtual void CarregaTxt()
+        {
+
+        }
+        public virtual void LimpaTxt()
+        {
+
+
+        }
+        public virtual void BloqueiaTxt()
+        {
+
+        }
+        public virtual void DesbloqueiaTxt()
+        {
+
+        }
+        public virtual String Salvar()
+        {
+            return " ";
+        }
+
+        private void FrmCadastro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
