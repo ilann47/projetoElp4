@@ -12,8 +12,10 @@ namespace projetoElp4
 {
     public partial class FrmPrincipal : Form
     {
+        Interfaces aInter;
         public FrmPrincipal()
         {
+            aInter = new Interfaces();
             InitializeComponent();
         }
 
@@ -24,6 +26,23 @@ namespace projetoElp4
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void paisesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aInter.PecaPaises();
+        }
+
+        private void estadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aInter.PecaEstados();
+
+        }
+
+        private void cidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aInter.PecaCidades();
 
         }
     }
