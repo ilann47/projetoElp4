@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FrmConsultaPaises
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(611, 379);
+            this.Name = "FrmConsultaPaises";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

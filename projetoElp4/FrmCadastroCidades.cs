@@ -14,5 +14,29 @@ namespace projetoElp4
         {
             InitializeComponent();
         }
+        public override void ConhecaObj(object obj)
+        {
+
+        }
+        public override void CarregaTxt()
+        {
+
+        }
+        public override void LimpaTxt()
+        {
+
+
+        }
+        public override void BloqueiaTxt()
+        {
+
+        }
+        public override void DesbloqueiaTxt()
+        {
+
+        }
+        public override void Salvar()
+        {
+        }
     }
 }

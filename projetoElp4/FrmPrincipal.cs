@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projetoElp4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,25 +14,18 @@ namespace projetoElp4
     public partial class FrmPrincipal : Form
     {
         Interfaces aInter;
+        Paises oPais;
         public FrmPrincipal()
         {
             aInter = new Interfaces();
+            oPais = new Paises();
             InitializeComponent();
         }
 
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void paisesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            aInter.PecaPaises();
+            aInter.PecaPaises(oPais);
         }
 
         private void estadosToolStripMenuItem_Click(object sender, EventArgs e)

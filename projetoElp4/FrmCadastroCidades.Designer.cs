@@ -28,7 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // textBoxCodigo
+            // 
+            this.textBoxCodigo.Text = "0";
+            // 
+            // Sair
+            // 
+            this.Sair.Location = new System.Drawing.Point(535, 333);
+            this.Sair.Size = new System.Drawing.Size(56, 23);
+            // 
+            // FrmCadastroCidades
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(602, 364);
+            this.Name = "FrmCadastroCidades";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

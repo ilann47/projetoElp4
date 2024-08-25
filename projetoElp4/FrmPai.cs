@@ -17,9 +17,10 @@ namespace projetoElp4
             InitializeComponent();
         }
 
-        private void FrmPais_Load(object sender, EventArgs e)
-        {
 
+        protected void Sair_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

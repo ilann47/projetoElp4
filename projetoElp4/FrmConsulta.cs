@@ -10,48 +10,57 @@ namespace projetoElp4
 {
     public partial class FrmConsulta : projetoElp4.FrmPai
     {
+
         public FrmConsulta()
         {
             InitializeComponent();
         }
+        public virtual void ConhecaObj(Object obj)
+        {
 
-
-        protected virtual void incluir()
+        }
+        protected virtual void Incluir()
         {
 
         }
 
-        protected virtual void excluir()
+        protected virtual void Excluir()
         {
 
         }
 
-        protected virtual void alterar()
+        protected virtual void Alterar()
         {
 
         }
 
-        private void Incluir_Click(object sender, EventArgs e)
+        private void btnIncluir_Click(object sender, EventArgs e)
         {
-            this.incluir();
-        }
-
-        private void Alterar_Click(object sender, EventArgs e)
-        {
-            this.alterar();
-        }
-
-        private void Excluir_Click(object sender, EventArgs e)
-        {
-            this.excluir();
-        }
-
-        private void Pesquisar_Click(object sender, EventArgs e)
-        {
+            this.Incluir();
 
         }
 
-        public virtual void SetFrmCadastro(Object frm)
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            this.Alterar();
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            this.Excluir();
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        public virtual void SetFrmCadastro(Object Frm)
         {
 
         }

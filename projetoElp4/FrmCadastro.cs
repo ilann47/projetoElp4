@@ -14,7 +14,7 @@ namespace projetoElp4
         {
             InitializeComponent();
         }
-        public virtual void ConhecaObj(object obj)
+        public virtual void ConhecaObj(Object obj)
         {
 
         }
@@ -35,14 +35,14 @@ namespace projetoElp4
         {
 
         }
-        public virtual String Salvar()
+        public virtual void Salvar()
         {
-            return " ";
         }
 
-        private void FrmCadastro_Load(object sender, EventArgs e)
-        {
 
+        private void btnSalvar1_Click(object sender, EventArgs e)
+        {
+            Salvar();
         }
     }
 }
