@@ -25,6 +25,7 @@ namespace projetoElp4
             ofrmConsultaPaises.SetFrmCadastro(ofrmCadastroPaises);
             ofrmConsultaEstados.SetFrmCadastro(ofrmCadastroEstados);
             ofrmConsultaCidades.SetFrmCadastro(ofrmCadastroCidades);
+            ofrmCadastroEstados.setFrmConsultaPaises(ofrmConsultaPaises);
         }
         public void PecaPaises(Object obj)
         {
@@ -35,8 +36,9 @@ namespace projetoElp4
         {
             ofrmConsultaCidades.ShowDialog();
         }
-        public void PecaEstados()
+        public void PecaEstados(Object obj)
         {
+            ofrmConsultaEstados.ConhecaObj(obj);
             ofrmConsultaEstados.ShowDialog();
         }
     }

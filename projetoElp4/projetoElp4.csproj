@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Estados.cs" />
     <Compile Include="FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastroCidades.resx">
       <DependentUpon>FrmCadastroCidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCadastroEstados.resx">
+      <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCadastroPaises.resx">
       <DependentUpon>FrmCadastroPaises.cs</DependentUpon>

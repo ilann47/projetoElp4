@@ -25,21 +25,21 @@ namespace projetoElp4
         protected override void Incluir()
         {
             oFrmCadastroPaises.ConhecaObj(oPais);
-            //oFrmCadastroPaises.LimpaTxt();
+            oFrmCadastroPaises.LimpaTxt();
             oFrmCadastroPaises.ShowDialog();
 
         }
         protected override void Alterar()
         {
             oFrmCadastroPaises.ConhecaObj(oPais);
-            //oFrmCadastroPaises.LimpaTxt();
+            oFrmCadastroPaises.LimpaTxt();
             oFrmCadastroPaises.CarregaTxt();
             oFrmCadastroPaises.ShowDialog();
 
         }
         protected override void Excluir()
         {
-            //oFrmCadastroPaises.LimpaTxt();
+            oFrmCadastroPaises.LimpaTxt();
             oFrmCadastroPaises.ConhecaObj(oPais);
             oFrmCadastroPaises.CarregaTxt();
             oFrmCadastroPaises.BloqueiaTxt();

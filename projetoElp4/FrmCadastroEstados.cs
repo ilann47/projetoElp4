@@ -10,13 +10,15 @@ namespace projetoElp4
 {
     public partial class FrmCadastroEstados : projetoElp4.FrmCadastro
     {
+        Estados oEstados;
+        FrmConsultaPaises oFrmConsultaPaises;
         public FrmCadastroEstados()
         {
             InitializeComponent();
         }
         public override void ConhecaObj(Object obj)
         {
-
+            oEstados = (Estados)obj;
         }
         public override void CarregaTxt()
         {
@@ -37,6 +39,19 @@ namespace projetoElp4
         }
         public override void Salvar()
         {
+        }
+
+        public void setFrmConsultaPaises(Object obj)
+        {
+            oFrmConsultaPaises = (FrmConsultaPaises) obj;
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+             oFrmConsultaPaises.ConhecaObj(oEstados.OPais);
+             oFrmConsultaPaises.ShowDialog();
+             this.txtBoxCodPais.Text = oEstados.OPais.Codigo.ToString();
+            this.textBoxPais.Text = oEstados.OPais.Pais;
         }
     }
 }
