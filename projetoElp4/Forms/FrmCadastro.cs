@@ -43,6 +43,7 @@ namespace projetoElp4
         private void btnSalvar1_Click(object sender, EventArgs e)
         {
             Salvar();
+            Close();
         }
     }
 }

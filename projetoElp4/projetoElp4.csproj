@@ -46,94 +46,95 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Estados.cs" />
-    <Compile Include="FrmCadastro.cs">
+    <Compile Include="Models\Cidades.cs" />
+    <Compile Include="Models\Estados.cs" />
+    <Compile Include="Forms\FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadastro.Designer.cs">
+    <Compile Include="Forms\FrmCadastro.Designer.cs">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadastroCidades.cs">
+    <Compile Include="Forms\FrmCadastroCidades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadastroCidades.Designer.cs">
+    <Compile Include="Forms\FrmCadastroCidades.Designer.cs">
       <DependentUpon>FrmCadastroCidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadastroEstados.cs">
+    <Compile Include="Forms\FrmCadastroEstados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadastroEstados.Designer.cs">
+    <Compile Include="Forms\FrmCadastroEstados.Designer.cs">
       <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCadastroPaises.cs">
+    <Compile Include="Forms\FrmCadastroPaises.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCadastroPaises.Designer.cs">
+    <Compile Include="Forms\FrmCadastroPaises.Designer.cs">
       <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsulta.cs">
+    <Compile Include="Forms\FrmConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsulta.Designer.cs">
+    <Compile Include="Forms\FrmConsulta.Designer.cs">
       <DependentUpon>FrmConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultaCidades.cs">
+    <Compile Include="Forms\FrmConsultaCidades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsultaCidades.Designer.cs">
+    <Compile Include="Forms\FrmConsultaCidades.Designer.cs">
       <DependentUpon>FrmConsultaCidades.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultaEstados.cs">
+    <Compile Include="Forms\FrmConsultaEstados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsultaEstados.Designer.cs">
+    <Compile Include="Forms\FrmConsultaEstados.Designer.cs">
       <DependentUpon>FrmConsultaEstados.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmConsultaPaises.cs">
+    <Compile Include="Forms\FrmConsultaPaises.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmConsultaPaises.Designer.cs">
+    <Compile Include="Forms\FrmConsultaPaises.Designer.cs">
       <DependentUpon>FrmConsultaPaises.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPai.cs">
+    <Compile Include="Forms\FrmPai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPai.Designer.cs">
+    <Compile Include="Forms\FrmPai.Designer.cs">
       <DependentUpon>FrmPai.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrincipal.cs">
+    <Compile Include="Forms\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrincipal.Designer.cs">
+    <Compile Include="Forms\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces.cs" />
-    <Compile Include="Pai.cs" />
-    <Compile Include="Paises.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Models\Interfaces.cs" />
+    <Compile Include="Models\Pai.cs" />
+    <Compile Include="Models\Paises.cs" />
+    <Compile Include="Models\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCadastro.resx">
+    <EmbeddedResource Include="Forms\FrmCadastro.resx">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadastroCidades.resx">
+    <EmbeddedResource Include="Forms\FrmCadastroCidades.resx">
       <DependentUpon>FrmCadastroCidades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadastroEstados.resx">
+    <EmbeddedResource Include="Forms\FrmCadastroEstados.resx">
       <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCadastroPaises.resx">
+    <EmbeddedResource Include="Forms\FrmCadastroPaises.resx">
       <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsulta.resx">
+    <EmbeddedResource Include="Forms\FrmConsulta.resx">
       <DependentUpon>FrmConsulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmConsultaPaises.resx">
+    <EmbeddedResource Include="Forms\FrmConsultaPaises.resx">
       <DependentUpon>FrmConsultaPaises.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPai.resx">
+    <EmbeddedResource Include="Forms\FrmPai.resx">
       <DependentUpon>FrmPai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrincipal.resx">
+    <EmbeddedResource Include="Forms\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

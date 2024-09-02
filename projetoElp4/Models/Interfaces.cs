@@ -26,14 +26,16 @@ namespace projetoElp4
             ofrmConsultaEstados.SetFrmCadastro(ofrmCadastroEstados);
             ofrmConsultaCidades.SetFrmCadastro(ofrmCadastroCidades);
             ofrmCadastroEstados.setFrmConsultaPaises(ofrmConsultaPaises);
+            ofrmCadastroCidades.setFrmConsultaEstado(ofrmConsultaEstados);
         }
         public void PecaPaises(Object obj)
         {
             ofrmConsultaPaises.ConhecaObj(obj);
             ofrmConsultaPaises.ShowDialog();
         }
-        public void PecaCidades()
+        public void PecaCidades(Object obj)
         {
+            ofrmConsultaCidades.ConhecaObj(obj);
             ofrmConsultaCidades.ShowDialog();
         }
         public void PecaEstados(Object obj)

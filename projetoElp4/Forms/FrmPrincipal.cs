@@ -16,11 +16,13 @@ namespace projetoElp4
         Interfaces aInter;
         Paises oPais;
         Estados oEstado;
+        Cidades aCidade;
         public FrmPrincipal()
         {
             aInter = new Interfaces();
             oPais = new Paises();
             oEstado = new Estados();
+            aCidade = new Cidades();
             InitializeComponent();
         }
 
@@ -37,7 +39,7 @@ namespace projetoElp4
 
         private void cidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            aInter.PecaCidades();
+            aInter.PecaCidades(aCidade);
 
         }
     }
