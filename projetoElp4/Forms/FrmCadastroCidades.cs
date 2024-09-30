@@ -16,31 +16,38 @@ namespace projetoElp4
         public FrmCadastroCidades()
         {
             InitializeComponent();
+            oFrmCadastro = new FrmCadastro();
+
         }
         public override void ConhecaObj(Object obj)
         {
             aCidade = (Cidades)obj;
-            oFrmCadastro = new FrmCadastro();
         }
         public override void CarregaTxt()
         {
-
+            this.txtBoxCidade.Text = aCidade.Cidade;
+            this.txtBoxDDD.Text = aCidade.Ddd;
         }
         public override void LimpaTxt()
         {
-
+            this.txtBoxDDD.Clear();
+            this.txtBoxCidade.Clear();
 
         }
         public override void BloqueiaTxt()
         {
-
+            this.txtBoxCidade.Enabled = false;
+            this.txtBoxDDD.Enabled = false;
         }
         public override void DesbloqueiaTxt()
         {
-
+            this.txtBoxDDD.Enabled = true;
+            this.txtBoxCidade.Enabled = true;
         }
         public override void Salvar()
         {
+            aCidade.Ddd = this.txtBoxDDD.Text;
+            aCidade.Cidade = this.txtBoxCidade.Text;
         }
 
         public void setFrmConsultaEstado(Object obj)
@@ -62,6 +69,11 @@ namespace projetoElp4
         }
 
         private void btnSalvar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBoxCidade_TextChanged(object sender, EventArgs e)
         {
 
         }

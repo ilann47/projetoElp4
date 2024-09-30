@@ -39,19 +39,21 @@
             // 
             // btnSalvar1
             // 
+            this.btnSalvar1.TabIndex = 5;
             this.btnSalvar1.Click += new System.EventHandler(this.btnSalvar1_Click);
             // 
             // Sair
             // 
             this.Sair.Location = new System.Drawing.Point(535, 333);
             this.Sair.Size = new System.Drawing.Size(56, 23);
+            this.Sair.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(102, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 15);
+            this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 13;
             this.label1.Text = "DDD";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -61,7 +63,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(221, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 15);
+            this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "Cidade";
             // 
@@ -70,37 +72,38 @@
             this.txtBoxDDD.Location = new System.Drawing.Point(105, 29);
             this.txtBoxDDD.Name = "txtBoxDDD";
             this.txtBoxDDD.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxDDD.TabIndex = 15;
+            this.txtBoxDDD.TabIndex = 2;
             // 
             // txtBoxCidade
             // 
             this.txtBoxCidade.Location = new System.Drawing.Point(224, 29);
             this.txtBoxCidade.Name = "txtBoxCidade";
             this.txtBoxCidade.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxCidade.TabIndex = 16;
+            this.txtBoxCidade.TabIndex = 3;
+            this.txtBoxCidade.TextChanged += new System.EventHandler(this.txtBoxCidade_TextChanged);
             // 
             // txtBoxEstado
             // 
             this.txtBoxEstado.Location = new System.Drawing.Point(340, 29);
             this.txtBoxEstado.Name = "txtBoxEstado";
             this.txtBoxEstado.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxEstado.TabIndex = 17;
+            this.txtBoxEstado.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(337, 11);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 15);
+            this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "Estado";
             // 
-            // btnConsultaCidade
+            // btnConsultaEstados
             // 
             this.btnConsultaEstados.Location = new System.Drawing.Point(479, 25);
-            this.btnConsultaEstados.Name = "btnConsultaCidade";
+            this.btnConsultaEstados.Name = "btnConsultaEstados";
             this.btnConsultaEstados.Size = new System.Drawing.Size(75, 23);
-            this.btnConsultaEstados.TabIndex = 19;
+            this.btnConsultaEstados.TabIndex = 0;
             this.btnConsultaEstados.Text = "Consulta";
             this.btnConsultaEstados.UseVisualStyleBackColor = true;
             this.btnConsultaEstados.Click += new System.EventHandler(this.btnConsultaEstados_Click);
@@ -137,10 +140,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBoxDDD;
-        private System.Windows.Forms.TextBox txtBoxCidade;
-        private System.Windows.Forms.TextBox txtBoxEstado;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Button btnConsultaEstados;
+        public System.Windows.Forms.TextBox txtBoxEstado;
+        public System.Windows.Forms.TextBox txtBoxDDD;
+        public System.Windows.Forms.TextBox txtBoxCidade;
     }
 }

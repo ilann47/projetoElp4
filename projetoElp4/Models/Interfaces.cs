@@ -15,6 +15,7 @@ namespace projetoElp4
         FrmCadastroCidades ofrmCadastroCidades;
         FrmCadastroEstados ofrmCadastroEstados;
         FrmCadastroPaises ofrmCadastroPaises;
+
         public Interfaces() {
             ofrmConsultaCidades = new FrmConsultaCidades();
             ofrmConsultaPaises = new FrmConsultaPaises();
@@ -27,6 +28,7 @@ namespace projetoElp4
             ofrmConsultaCidades.SetFrmCadastro(ofrmCadastroCidades);
             ofrmCadastroEstados.setFrmConsultaPaises(ofrmConsultaPaises);
             ofrmCadastroCidades.setFrmConsultaEstado(ofrmConsultaEstados);
+
         }
         public void PecaPaises(Object obj)
         {

@@ -38,12 +38,20 @@
             this.btnConsulta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // btnSalvar1
+            // 
+            this.btnSalvar1.TabIndex = 6;
+            // 
+            // Sair
+            // 
+            this.Sair.TabIndex = 7;
+            // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Location = new System.Drawing.Point(108, 13);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(45, 15);
+            this.lblEstado.Size = new System.Drawing.Size(40, 13);
             this.lblEstado.TabIndex = 13;
             this.lblEstado.Text = "Estado";
             // 
@@ -52,7 +60,7 @@
             this.lblUF.AutoSize = true;
             this.lblUF.Location = new System.Drawing.Point(225, 14);
             this.lblUF.Name = "lblUF";
-            this.lblUF.Size = new System.Drawing.Size(23, 15);
+            this.lblUF.Size = new System.Drawing.Size(21, 13);
             this.lblUF.TabIndex = 14;
             this.lblUF.Text = "UF";
             // 
@@ -61,7 +69,7 @@
             this.lblPais.AutoSize = true;
             this.lblPais.Location = new System.Drawing.Point(347, 13);
             this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(31, 15);
+            this.lblPais.Size = new System.Drawing.Size(27, 13);
             this.lblPais.TabIndex = 15;
             this.lblPais.Text = "Pais";
             // 
@@ -70,35 +78,35 @@
             this.txtBoxEstado.Location = new System.Drawing.Point(111, 32);
             this.txtBoxEstado.Name = "txtBoxEstado";
             this.txtBoxEstado.Size = new System.Drawing.Size(100, 20);
-            this.txtBoxEstado.TabIndex = 16;
+            this.txtBoxEstado.TabIndex = 2;
             // 
             // textBoxUF
             // 
             this.textBoxUF.Location = new System.Drawing.Point(228, 32);
             this.textBoxUF.Name = "textBoxUF";
             this.textBoxUF.Size = new System.Drawing.Size(38, 20);
-            this.textBoxUF.TabIndex = 17;
+            this.textBoxUF.TabIndex = 3;
             // 
             // textBoxPais
             // 
             this.textBoxPais.Location = new System.Drawing.Point(334, 32);
             this.textBoxPais.Name = "textBoxPais";
             this.textBoxPais.Size = new System.Drawing.Size(100, 20);
-            this.textBoxPais.TabIndex = 18;
+            this.textBoxPais.TabIndex = 5;
             // 
             // txtBoxCodPais
             // 
             this.txtBoxCodPais.Location = new System.Drawing.Point(286, 32);
             this.txtBoxCodPais.Name = "txtBoxCodPais";
             this.txtBoxCodPais.Size = new System.Drawing.Size(42, 20);
-            this.txtBoxCodPais.TabIndex = 19;
+            this.txtBoxCodPais.TabIndex = 4;
             // 
             // btnConsulta
             // 
             this.btnConsulta.Location = new System.Drawing.Point(515, 30);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(75, 23);
-            this.btnConsulta.TabIndex = 20;
+            this.btnConsulta.TabIndex = 0;
             this.btnConsulta.Text = "Consulta";
             this.btnConsulta.UseVisualStyleBackColor = true;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
@@ -136,11 +144,11 @@
         #endregion
         private System.Windows.Forms.Label lblUF;
         private System.Windows.Forms.Label lblPais;
-        private System.Windows.Forms.TextBox txtBoxEstado;
-        private System.Windows.Forms.TextBox textBoxUF;
-        private System.Windows.Forms.TextBox textBoxPais;
-        private System.Windows.Forms.TextBox txtBoxCodPais;
         public System.Windows.Forms.Button btnConsulta;
         public System.Windows.Forms.Label lblEstado;
+        public System.Windows.Forms.TextBox txtBoxEstado;
+        public System.Windows.Forms.TextBox textBoxUF;
+        public System.Windows.Forms.TextBox textBoxPais;
+        public System.Windows.Forms.TextBox txtBoxCodPais;
     }
 }

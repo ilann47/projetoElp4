@@ -128,6 +128,12 @@
     <EmbeddedResource Include="Forms\FrmConsulta.resx">
       <DependentUpon>FrmConsulta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmConsultaCidades.resx">
+      <DependentUpon>FrmConsultaCidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmConsultaEstados.resx">
+      <DependentUpon>FrmConsultaEstados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmConsultaPaises.resx">
       <DependentUpon>FrmConsultaPaises.cs</DependentUpon>
     </EmbeddedResource>

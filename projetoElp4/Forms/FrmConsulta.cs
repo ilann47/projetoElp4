@@ -33,6 +33,10 @@ namespace projetoElp4
         {
 
         }
+        protected virtual void CarregaLV()
+        {
+
+        }
 
         private void btnIncluir_Click(object sender, EventArgs e)
         {
@@ -45,6 +49,7 @@ namespace projetoElp4
             this.Alterar();
 
         }
+
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {

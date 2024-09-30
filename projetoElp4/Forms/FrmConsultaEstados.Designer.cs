@@ -28,9 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.HeaderUF = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.HeaderEstado = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.HeaderPais = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SuspendLayout();
+            // 
+            // listView
+            // 
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.HeaderUF,
+            this.HeaderEstado,
+            this.HeaderPais});
+            // 
+            // HeaderUF
+            // 
+            this.HeaderUF.Text = "UF";
+            // 
+            // HeaderEstado
+            // 
+            this.HeaderEstado.Text = "Estado";
+            this.HeaderEstado.Width = 152;
+            // 
+            // HeaderPais
+            // 
+            this.HeaderPais.Text = "Pais";
+            this.HeaderPais.Width = 178;
+            // 
+            // FrmConsultaEstados
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(611, 379);
+            this.Name = "FrmConsultaEstados";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        public System.Windows.Forms.ColumnHeader HeaderUF;
+        private System.Windows.Forms.ColumnHeader HeaderEstado;
+        private System.Windows.Forms.ColumnHeader HeaderPais;
     }
 }

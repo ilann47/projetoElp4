@@ -36,11 +36,13 @@ namespace projetoElp4
         {
             this.txtBoxEstado.Enabled = false;
             this.textBoxUF.Enabled = false;
+            this.txtBoxCodPais.Enabled = false;
         }
         public override void DesbloqueiaTxt()
         {
             this.txtBoxEstado.Enabled = true;
             this.textBoxUF.Enabled = true;
+            this.txtBoxCodPais.Enabled=true;
         }
         public override void Salvar()
         {

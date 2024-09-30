@@ -12,6 +12,8 @@ namespace projetoElp4
         protected string sigla;
         protected string ddi;
         protected string moeda;
+        protected Paises oPais;
+        protected List<Paises> paises;
 
         public Paises() : base()
         {
@@ -19,6 +21,7 @@ namespace projetoElp4
             sigla = "";
             ddi = "";
             moeda = "";
+            paises = new List<Paises>();
         }
 
         public Paises(int codigo, string datCad, string datUltAlt, int coduso, string pais, string sigla, string ddi, string moeda)

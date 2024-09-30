@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.listView = new System.Windows.Forms.ListView();
+            this.listViewColumnCodigo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnIncluir = new System.Windows.Forms.Button();
@@ -41,13 +42,22 @@
             // 
             // listView
             // 
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listViewColumnCodigo});
+            this.listView.FullRowSelect = true;
+            this.listView.GridLines = true;
             this.listView.HideSelection = false;
             this.listView.Location = new System.Drawing.Point(11, 54);
             this.listView.Name = "listView";
             this.listView.Size = new System.Drawing.Size(577, 278);
             this.listView.TabIndex = 3;
             this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
             this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
+            // 
+            // listViewColumnCodigo
+            // 
+            this.listViewColumnCodigo.Text = "Codigo";
             // 
             // btnExcluir
             // 
@@ -118,5 +128,6 @@
         public System.Windows.Forms.Button btnIncluir;
         public System.Windows.Forms.Button btnPesquisar;
         public System.Windows.Forms.ListView listView;
+        public System.Windows.Forms.ColumnHeader listViewColumnCodigo;
     }
 }
