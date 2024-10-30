@@ -46,103 +46,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Cidades.cs" />
-    <Compile Include="Models\Estados.cs" />
-    <Compile Include="Forms\FrmCadastro.cs">
+    <Compile Include="_Cidades\Model\Cidades.cs" />
+    <Compile Include="_Estados\Model\Estados.cs" />
+    <Compile Include="MainWindow\Models\Interfaces.cs" />
+    <Compile Include="MainWindow\Models\Pai.cs" />
+    <Compile Include="MainWindow\View\FrmCadastro\FrmCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmCadastro.Designer.cs">
+    <Compile Include="MainWindow\View\FrmCadastro\FrmCadastro.Designer.cs">
       <DependentUpon>FrmCadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmCadastroCidades.cs">
+    <Compile Include="MainWindow\View\FrmConsulta\FrmConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmCadastroCidades.Designer.cs">
-      <DependentUpon>FrmCadastroCidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmCadastroEstados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmCadastroEstados.Designer.cs">
-      <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmCadastroPaises.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmCadastroPaises.Designer.cs">
-      <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmConsulta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmConsulta.Designer.cs">
+    <Compile Include="MainWindow\View\FrmConsulta\FrmConsulta.Designer.cs">
       <DependentUpon>FrmConsulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmConsultaCidades.cs">
+    <Compile Include="MainWindow\View\FrmPai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmConsultaCidades.Designer.cs">
-      <DependentUpon>FrmConsultaCidades.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmConsultaEstados.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmConsultaEstados.Designer.cs">
-      <DependentUpon>FrmConsultaEstados.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmConsultaPaises.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmConsultaPaises.Designer.cs">
-      <DependentUpon>FrmConsultaPaises.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmPai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmPai.Designer.cs">
+    <Compile Include="MainWindow\View\FrmPai.Designer.cs">
       <DependentUpon>FrmPai.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FrmPrincipal.cs">
+    <Compile Include="MainWindow\View\FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmPrincipal.Designer.cs">
+    <Compile Include="MainWindow\View\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Interfaces.cs" />
-    <Compile Include="Models\Pai.cs" />
-    <Compile Include="Models\Paises.cs" />
-    <Compile Include="Models\Program.cs" />
+    <Compile Include="_Paises\Model\Paises.cs" />
+    <Compile Include="MainWindow\Models\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\FrmCadastro.resx">
-      <DependentUpon>FrmCadastro.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmCadastroCidades.resx">
+    <Compile Include="_Cidades\View\FrmCadastro\FrmCadastroCidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Cidades\View\FrmCadastro\FrmCadastroCidades.Designer.cs">
       <DependentUpon>FrmCadastroCidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmCadastroEstados.resx">
-      <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmCadastroPaises.resx">
-      <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmConsulta.resx">
-      <DependentUpon>FrmConsulta.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmConsultaCidades.resx">
+    </Compile>
+    <Compile Include="_Cidades\View\FrmConsulta\FrmConsultaCidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Cidades\View\FrmConsulta\FrmConsultaCidades.Designer.cs">
       <DependentUpon>FrmConsultaCidades.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmConsultaEstados.resx">
+    </Compile>
+    <Compile Include="_Estados\View\FrmCadastro\FrmCadastroEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Estados\View\FrmCadastro\FrmCadastroEstados.Designer.cs">
+      <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Estados\View\FrmConsulta\FrmConsultaEstados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Estados\View\FrmConsulta\FrmConsultaEstados.Designer.cs">
       <DependentUpon>FrmConsultaEstados.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmConsultaPaises.resx">
+    </Compile>
+    <Compile Include="_Paises\View\FrmCadastro\FrmCadastroPaises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Paises\View\FrmCadastro\FrmCadastroPaises.Designer.cs">
+      <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Paises\View\FrmConsulta\FrmConsultaPaises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Paises\View\FrmConsulta\FrmConsultaPaises.Designer.cs">
       <DependentUpon>FrmConsultaPaises.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmPai.resx">
-      <DependentUpon>FrmPai.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -152,6 +122,36 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="_Cidades\View\FrmCadastro\FrmCadastroCidades.resx">
+      <DependentUpon>FrmCadastroCidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Cidades\View\FrmConsulta\FrmConsultaCidades.resx">
+      <DependentUpon>FrmConsultaCidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Estados\View\FrmCadastro\FrmCadastroEstados.resx">
+      <DependentUpon>FrmCadastroEstados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Estados\View\FrmConsulta\FrmConsultaEstados.resx">
+      <DependentUpon>FrmConsultaEstados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow\View\FrmCadastro\FrmCadastro.resx">
+      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow\View\FrmConsulta\FrmConsulta.resx">
+      <DependentUpon>FrmConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow\View\FrmPai.resx">
+      <DependentUpon>FrmPai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow\View\FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Paises\View\FrmCadastro\FrmCadastroPaises.resx">
+      <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Paises\View\FrmConsulta\FrmConsultaPaises.resx">
+      <DependentUpon>FrmConsultaPaises.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -164,6 +164,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MainWindow\Controller\" />
+    <Folder Include="MainWindow\Dao\" />
+    <Folder Include="_Cidades\Controller\" />
+    <Folder Include="_Cidades\Dao\" />
+    <Folder Include="_Estados\Controller\" />
+    <Folder Include="_Estados\Dao\" />
+    <Folder Include="_Paises\Controller\" />
+    <Folder Include="_Paises\Dao\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
