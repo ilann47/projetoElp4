@@ -1,4 +1,5 @@
 ﻿using projetoElp4;
+using projetoElp4._Paises.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,13 +13,15 @@ namespace projetoElp4
     public partial class FrmCadastroPaises : projetoElp4.FrmCadastro
     {
         Paises oPais;
+        PaisesController oPaisController;
         public FrmCadastroPaises()
         {
             InitializeComponent();
         }
-        public override void ConhecaObj(Object obj)
+        public override void ConhecaObj(Object obj, Object Controller)
         {
             oPais = (Paises) obj;
+            oPaisController = (PaisesController)Controller;
         }
         public override void CarregaTxt()
         {
@@ -50,6 +53,7 @@ namespace projetoElp4
         }
         public override void Salvar()
         {
+            base.Salvar();
             oPais.Codigo = 0;
             oPais.Pais = this.txtPais.Text;
             oPais.Sigla = this.txtSigla.Text;
