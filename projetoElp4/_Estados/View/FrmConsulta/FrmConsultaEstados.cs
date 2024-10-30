@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projetoElp4._Estados.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,21 +12,24 @@ namespace projetoElp4
     public partial class FrmConsultaEstados : projetoElp4.FrmConsulta
     {
         FrmCadastroEstados oFrmCadastroEstados;
+        EstadosController oEstadoController;
+        Estados oEstado;
         List<Estados> ListaEstados;
         public FrmConsultaEstados()
         {
             InitializeComponent();
             ListaEstados = new List<Estados>();
         }
-        public override void ConhecaObj(Object obj)
+        public override void ConhecaObj(Object obj, Object Controller)
         {
-            Estados oEstado = (Estados)obj;
+            oEstado = (Estados)obj;
+            oEstadoController = (EstadosController)Controller;
         }
 
         protected override void Incluir()
         {
             Estados novoEstado = new Estados();
-            oFrmCadastroEstados.ConhecaObj(novoEstado);
+            oFrmCadastroEstados.ConhecaObj(novoEstado, null);
             oFrmCadastroEstados.txtBoxCodPais.Enabled = false;
             oFrmCadastroEstados.textBoxPais.Enabled = false;
             oFrmCadastroEstados.LimpaTxt();
@@ -45,7 +49,7 @@ namespace projetoElp4
             }
             int index = listView.SelectedIndices[0];
             Estados EstadoSelecionado = ListaEstados[index];
-            oFrmCadastroEstados.ConhecaObj(EstadoSelecionado);
+            oFrmCadastroEstados.ConhecaObj(EstadoSelecionado, null);
             oFrmCadastroEstados.LimpaTxt();
             oFrmCadastroEstados.CarregaTxt();
             oFrmCadastroEstados.ShowDialog();
