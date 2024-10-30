@@ -29,17 +29,17 @@ namespace projetoElp4
 
         private void paisesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            aInter.PecaPaises(oPais);
+            aInter.PecaPaises(oPais, null);
         }
 
         private void estadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            aInter.PecaEstados(oEstado);
+            aInter.PecaEstados(oEstado, null);
         }
 
         private void cidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            aInter.PecaCidades(aCidade);
+            aInter.PecaCidades(aCidade, null);
 
         }
     }

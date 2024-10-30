@@ -17,6 +17,10 @@ namespace projetoElp4
             InitializeComponent();
         }
 
+        public virtual void ConhecaObj(Object obj, Object Controller)
+        {
+
+        }
 
         protected void Sair_Click(object sender, EventArgs e)
         {

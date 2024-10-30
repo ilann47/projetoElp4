@@ -14,7 +14,7 @@ namespace projetoElp4
         {
             InitializeComponent();
         }
-        public virtual void ConhecaObj(Object obj)
+        public override void ConhecaObj(Object obj, Object Controller)
         {
 
         }
