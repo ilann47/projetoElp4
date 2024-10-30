@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindow\Collections\Colecoes.cs" />
+    <Compile Include="MainWindow\Controller\Controller.cs" />
+    <Compile Include="MainWindow\Dao\Dao.cs" />
     <Compile Include="_Cidades\Model\Cidades.cs" />
     <Compile Include="_Estados\Model\Estados.cs" />
     <Compile Include="MainWindow\Models\Interfaces.cs" />
@@ -74,6 +77,9 @@
     <Compile Include="MainWindow\View\FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="_Paises\Collections\PaisesCol.cs" />
+    <Compile Include="_Paises\Controllers\PaisesController.cs" />
+    <Compile Include="_Paises\Daos\PaisDao.cs" />
     <Compile Include="_Paises\Model\Paises.cs" />
     <Compile Include="MainWindow\Models\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -166,14 +172,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MainWindow\Controller\" />
-    <Folder Include="MainWindow\Dao\" />
     <Folder Include="_Cidades\Controller\" />
     <Folder Include="_Cidades\Dao\" />
     <Folder Include="_Estados\Controller\" />
     <Folder Include="_Estados\Dao\" />
-    <Folder Include="_Paises\Controller\" />
-    <Folder Include="_Paises\Dao\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

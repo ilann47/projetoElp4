@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projetoElp4._Cidades.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,6 +12,7 @@ namespace projetoElp4
     public partial class FrmConsultaCidades : projetoElp4.FrmConsulta
     {
         FrmCadastroCidades oFrmCadastroCidades;
+        CidadesController aCidadeController;
         List<Cidades> ListaCidades;
         public FrmConsultaCidades()
         {
@@ -18,15 +20,16 @@ namespace projetoElp4
             ListaCidades = new List<Cidades>();
 
         }
-        public override void ConhecaObj(Object obj)
+        public override void ConhecaObj(Object obj, Object Controller)
         {
             Cidades aCidade = (Cidades)obj;
+            aCidadeController = (CidadesController)Controller;  
         }
 
         protected override void Incluir()
         {
             Cidades novaCidade = new Cidades();
-            oFrmCadastroCidades.ConhecaObj(novaCidade);
+            oFrmCadastroCidades.ConhecaObj(novaCidade, aCidadeController);
             oFrmCadastroCidades.txtBoxEstado.Enabled = false;
             oFrmCadastroCidades.LimpaTxt();
             oFrmCadastroCidades.ShowDialog();
@@ -45,7 +48,7 @@ namespace projetoElp4
             }
             int index = listView.SelectedIndices[0];
             Cidades CidadeSelecionado = ListaCidades[index];
-            oFrmCadastroCidades.ConhecaObj(ListaCidades);
+            oFrmCadastroCidades.ConhecaObj(ListaCidades, aCidadeController);
             oFrmCadastroCidades.LimpaTxt();
             oFrmCadastroCidades.CarregaTxt();
             oFrmCadastroCidades.ShowDialog();
@@ -62,7 +65,7 @@ namespace projetoElp4
             int index = listView.SelectedIndices[0];
             ListaCidades.RemoveAt(index);
             oFrmCadastroCidades.LimpaTxt();
-            oFrmCadastroCidades.ConhecaObj(ListaCidades);
+            oFrmCadastroCidades.ConhecaObj(ListaCidades, aCidadeController);
             oFrmCadastroCidades.CarregaTxt();
             oFrmCadastroCidades.BloqueiaTxt();
             oFrmCadastroCidades.DesbloqueiaTxt();

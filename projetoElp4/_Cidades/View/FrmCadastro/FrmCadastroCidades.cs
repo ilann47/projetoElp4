@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projetoElp4._Cidades.Controllers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,17 +12,17 @@ namespace projetoElp4
     public partial class FrmCadastroCidades : projetoElp4.FrmCadastro
     {
         Cidades aCidade;
+        CidadesController aCidadeController;
         FrmConsultaEstados oFrmConsultaEstados;
-        FrmCadastro oFrmCadastro;
         public FrmCadastroCidades()
         {
             InitializeComponent();
-            oFrmCadastro = new FrmCadastro();
 
         }
-        public override void ConhecaObj(Object obj)
+        public override void ConhecaObj(Object obj, Object Controller)
         {
             aCidade = (Cidades)obj;
+            aCidadeController = (CidadesController)Controller;
         }
         public override void CarregaTxt()
         {
@@ -58,14 +59,14 @@ namespace projetoElp4
 
         private void btnConsultaEstados_Click(object sender, EventArgs e)
         {
-            string txt = this.oFrmCadastro.btnSalvar1.Text;
-            this.oFrmCadastro.btnSalvar1.Text = "Selecionar";
-            oFrmConsultaEstados.ConhecaObj(aCidade.OEstado);
+            //string txt = this.oFrmCadastro.btnSalvar1.Text;
+            //this.oFrmCadastro.btnSalvar1.Text = "Selecionar";
+            oFrmConsultaEstados.ConhecaObj(aCidade.OEstado, null);
             oFrmConsultaEstados.ShowDialog();
             this.txtBoxEstado.Text = aCidade.OEstado.Estado;
             this.txtBoxCidade.Text = aCidade.Cidade.ToString();
    
-            this.oFrmCadastro.btnSalvar1.Text = txt;
+            //this.oFrmCadastro.btnSalvar1.Text = txt;
         }
 
         private void btnSalvar1_Click(object sender, EventArgs e)
