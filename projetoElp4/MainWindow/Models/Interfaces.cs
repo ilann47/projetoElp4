@@ -30,19 +30,19 @@ namespace projetoElp4
             ofrmCadastroCidades.setFrmConsultaEstado(ofrmConsultaEstados);
 
         }
-        public void PecaPaises(Object obj)
+        public void PecaPaises(Object obj, Object Controller)
         {
-            ofrmConsultaPaises.ConhecaObj(obj);
+            ofrmConsultaPaises.ConhecaObj(obj, Controller);
             ofrmConsultaPaises.ShowDialog();
         }
-        public void PecaCidades(Object obj)
+        public void PecaCidades(Object obj, Object Controller)
         {
-            ofrmConsultaCidades.ConhecaObj(obj);
+            ofrmConsultaCidades.ConhecaObj(obj, Controller);
             ofrmConsultaCidades.ShowDialog();
         }
-        public void PecaEstados(Object obj)
+        public void PecaEstados(Object obj, Object Controller)
         {
-            ofrmConsultaEstados.ConhecaObj(obj);
+            ofrmConsultaEstados.ConhecaObj(obj, Controller);
             ofrmConsultaEstados.ShowDialog();
         }
     }
