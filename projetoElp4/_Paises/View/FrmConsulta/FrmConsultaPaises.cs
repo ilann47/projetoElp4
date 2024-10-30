@@ -1,4 +1,5 @@
 ﻿using projetoElp4;
+using projetoElp4._Paises.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -8,26 +9,33 @@ namespace projetoElp4
     public partial class FrmConsultaPaises : projetoElp4.FrmConsulta
     {
         FrmCadastroPaises oFrmCadastroPaises;
-        List<Paises> ListaPaises;
+        Paises oPais;
+        PaisesController oPaisController;
+        List<Paises> aListaPaises;
+
 
         public FrmConsultaPaises()
         {
             InitializeComponent();
-            ListaPaises = new List<Paises>(); 
+            aListaPaises = new List<Paises>();
         }
 
-        public override void ConhecaObj(Object obj)
+        public override void ConhecaObj(Object obj, Object Controller)
         {
             if (obj is Paises)
             {
-                Paises oPais = (Paises)obj;
+                oPais = (Paises)obj;
+                oPaisController = (PaisesController)Controller;
             }
             else
             {
                 MessageBox.Show("Objeto inválido. Esperado um objeto do tipo Paises.");
             }
         }
-
+        public override void SetFrmCadastro(Object Frm)
+        {
+            oFrmCadastroPaises = (FrmCadastroPaises)Frm ?? throw new ArgumentNullException(nameof(Frm), "O formulário de cadastro não pode ser nulo.");
+        }
         protected override void Incluir()
         {
             if (oFrmCadastroPaises == null)
@@ -37,14 +45,11 @@ namespace projetoElp4
             }
 
             Paises novoPais = new Paises(); 
-            oFrmCadastroPaises.ConhecaObj(novoPais);
+            oFrmCadastroPaises.ConhecaObj(novoPais, oPaisController);
             oFrmCadastroPaises.LimpaTxt();
             oFrmCadastroPaises.ShowDialog();
 
-            if (!string.IsNullOrEmpty(novoPais.Pais))
-            {
-                ListaPaises.Add(novoPais);
-            }
+            SalvaObjetoLista();
 
             CarregaLV();
         }
@@ -58,9 +63,9 @@ namespace projetoElp4
             }
 
             int index = listView.SelectedIndices[0]; 
-            Paises paisSelecionado = ListaPaises[index];
+            Paises paisSelecionado = aListaPaises[index];
 
-            oFrmCadastroPaises.ConhecaObj(paisSelecionado);
+            oFrmCadastroPaises.ConhecaObj(paisSelecionado, oPaisController);
             oFrmCadastroPaises.LimpaTxt();
             oFrmCadastroPaises.CarregaTxt();
             oFrmCadastroPaises.ShowDialog();
@@ -76,8 +81,8 @@ namespace projetoElp4
                 return;
             }
 
-            int index = listView.SelectedIndices[0]; 
-            ListaPaises.RemoveAt(index); 
+            int index = listView.SelectedIndices[0];
+            aListaPaises.RemoveAt(index); 
 
             CarregaLV();
         }
@@ -87,7 +92,7 @@ namespace projetoElp4
             base.CarregaLV();
             listView.Items.Clear(); 
 
-            foreach (var oPais in ListaPaises)
+            foreach (var oPais in aListaPaises)
             {
                 ListViewItem item = new ListViewItem(Convert.ToString(oPais.Codigo));
                 item.SubItems.Add(oPais.Pais);
@@ -97,11 +102,18 @@ namespace projetoElp4
                 listView.Items.Add(item);
             }
         }
-
-        public override void SetFrmCadastro(Object Frm)
+        public override void SalvaObjetoLista()
         {
-            oFrmCadastroPaises = (FrmCadastroPaises)Frm ?? throw new ArgumentNullException(nameof(Frm), "O formulário de cadastro não pode ser nulo.");
+            base.SalvaObjetoLista();
+
+            Paises pais = oPais.Clonar();
+
+            if (pais.Codigo == 0) return;
+            if (aListaPaises.Exists(p => p.Codigo == pais.Codigo)) return;
+
+            aListaPaises.Add(pais);
         }
+
 
         private void listView_SelectedIndexChanged(object sender, EventArgs e)
         {
