@@ -1,5 +1,4 @@
-﻿using projetoElp4._Estados.Controller;
-using projetoElp4._Estados.Controllers;
+﻿using projetoElp4._Estados.Controllers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

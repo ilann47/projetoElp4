@@ -42,8 +42,8 @@ namespace projetoElp4
 
         public string DatUltAlt
         {
-            get { return DatUltAlt; }
-            set { DatUltAlt = value; }
+            get { return datUltAlt; }
+            set { datUltAlt = value; }
         }
     }
 }

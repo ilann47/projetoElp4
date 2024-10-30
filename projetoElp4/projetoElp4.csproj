@@ -49,7 +49,13 @@
     <Compile Include="MainWindow\Collections\Colecoes.cs" />
     <Compile Include="MainWindow\Controller\Controller.cs" />
     <Compile Include="MainWindow\Dao\Dao.cs" />
+    <Compile Include="_Cidades\Collection\CidadesCol.cs" />
+    <Compile Include="_Cidades\Controllers\CidadesController.cs" />
+    <Compile Include="_Cidades\Daos\CidadesDao.cs" />
     <Compile Include="_Cidades\Model\Cidades.cs" />
+    <Compile Include="_Estados\Collections\EstadosCol.cs" />
+    <Compile Include="_Estados\Controllers\EstadosController.cs" />
+    <Compile Include="_Estados\Daos\EstadosDao.cs" />
     <Compile Include="_Estados\Model\Estados.cs" />
     <Compile Include="MainWindow\Models\Interfaces.cs" />
     <Compile Include="MainWindow\Models\Pai.cs" />
@@ -171,11 +177,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="_Cidades\Controller\" />
-    <Folder Include="_Cidades\Dao\" />
-    <Folder Include="_Estados\Controller\" />
-    <Folder Include="_Estados\Dao\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
