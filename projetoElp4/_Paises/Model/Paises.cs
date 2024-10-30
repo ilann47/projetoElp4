@@ -32,6 +32,10 @@ namespace projetoElp4
             this.ddi = ddi;
             this.moeda = moeda;
         }
+        public Paises Clonar()
+        {
+            return new Paises(codigo, DatCad, DatUltAlt, coduso, Pais, Sigla, Ddi, Moeda);
+        }
 
         public string Pais
         {
