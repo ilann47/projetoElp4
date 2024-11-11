@@ -1,4 +1,6 @@
-﻿using System;
+﻿using projetoElp4._Fornecedores.View.FrmCadastro;
+using projetoElp4._Fornecedores.View.FrmConsulta;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,8 @@ namespace projetoElp4
         FrmConsultaPaises ofrmConsultaPaises;
         FrmConsultaCidades ofrmConsultaCidades;
         FrmConsultaEstados ofrmConsultaEstados;
+        FrmConsultaFornecedores oFrmConsultaFornecedores;
+        FrmCadastroFornecedores oFrmCadastroFornecedores;
         FrmCadastroCidades ofrmCadastroCidades;
         FrmCadastroEstados ofrmCadastroEstados;
         FrmCadastroPaises ofrmCadastroPaises;
@@ -20,14 +24,18 @@ namespace projetoElp4
             ofrmConsultaCidades = new FrmConsultaCidades();
             ofrmConsultaPaises = new FrmConsultaPaises();
             ofrmConsultaEstados = new FrmConsultaEstados();
+            oFrmConsultaFornecedores = new FrmConsultaFornecedores();
             ofrmCadastroCidades = new FrmCadastroCidades();
             ofrmCadastroEstados = new FrmCadastroEstados();
             ofrmCadastroPaises = new FrmCadastroPaises();
+            oFrmCadastroFornecedores = new FrmCadastroFornecedores();   
             ofrmConsultaPaises.SetFrmCadastro(ofrmCadastroPaises);
-            ofrmConsultaEstados.SetFrmCadastro(ofrmCadastroEstados);
-            ofrmConsultaCidades.SetFrmCadastro(ofrmCadastroCidades);
-            ofrmCadastroEstados.setFrmConsultaPaises(ofrmConsultaPaises);
+			ofrmConsultaEstados.SetFrmCadastro(ofrmCadastroEstados);
+			ofrmCadastroEstados.setFrmConsultaPaises(ofrmConsultaPaises);
+			ofrmConsultaCidades.SetFrmCadastro(ofrmCadastroCidades);
             ofrmCadastroCidades.setFrmConsultaEstado(ofrmConsultaEstados);
+            oFrmConsultaFornecedores.SetFrmCadastro(oFrmCadastroFornecedores);
+            oFrmCadastroFornecedores.setFrmConsultaCidades(ofrmConsultaCidades);
 
         }
         public void PecaPaises(Object obj, Object Controller)
@@ -44,6 +52,11 @@ namespace projetoElp4
         {
             ofrmConsultaEstados.ConhecaObj(obj, Controller);
             ofrmConsultaEstados.ShowDialog();
+        }
+        public void PecaFornecedores(Object obj, Object Controller)
+        {
+            oFrmConsultaFornecedores.ConhecaObj(obj, Controller);
+            oFrmConsultaFornecedores.ShowDialog();
         }
     }
 }

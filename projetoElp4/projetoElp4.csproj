@@ -103,6 +103,18 @@
     <Compile Include="_Fornecedores\Controllers\FornecedoresController.cs" />
     <Compile Include="_Fornecedores\Daos\FornecedoresDao.cs" />
     <Compile Include="_Fornecedores\Model\Fornecedores.cs" />
+    <Compile Include="_Fornecedores\View\FrmCadastro\FrmCadastroFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Fornecedores\View\FrmCadastro\FrmCadastroFornecedores.Designer.cs">
+      <DependentUpon>FrmCadastroFornecedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_Fornecedores\View\FrmConsulta\FrmConsultaFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_Fornecedores\View\FrmConsulta\FrmConsultaFornecedores.Designer.cs">
+      <DependentUpon>FrmConsultaFornecedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="_Paises\Collections\PaisesCol.cs" />
     <Compile Include="_Paises\Controllers\PaisesController.cs" />
     <Compile Include="_Paises\Daos\PaisDao.cs" />
@@ -178,6 +190,12 @@
     <EmbeddedResource Include="MainWindow\View\FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="_Fornecedores\View\FrmCadastro\FrmCadastroFornecedores.resx">
+      <DependentUpon>FrmCadastroFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_Fornecedores\View\FrmConsulta\FrmConsultaFornecedores.resx">
+      <DependentUpon>FrmConsultaFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="_Paises\View\FrmCadastro\FrmCadastroPaises.resx">
       <DependentUpon>FrmCadastroPaises.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,9 +236,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="_Fornecedores\View\FrmCadastro\" />
-    <Folder Include="_Fornecedores\View\FrmConsulta\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

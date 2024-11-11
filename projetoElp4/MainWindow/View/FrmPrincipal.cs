@@ -17,12 +17,14 @@ namespace projetoElp4
         Paises oPais;
         Estados oEstado;
         Cidades aCidade;
+        Fornecedores oFornecedor;
         public FrmPrincipal()
         {
             aInter = new Interfaces();
             oPais = new Paises();
             oEstado = new Estados();
             aCidade = new Cidades();
+            oFornecedor = new Fornecedores();
             InitializeComponent();
         }
 
@@ -41,6 +43,11 @@ namespace projetoElp4
         {
             aInter.PecaCidades(aCidade, null);
 
+        }
+
+        private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aInter.PecaFornecedores(oFornecedor, null);
         }
     }
 }

@@ -48,7 +48,7 @@ namespace projetoElp4
             }
             int index = listView.SelectedIndices[0];
             Cidades CidadeSelecionado = ListaCidades[index];
-            oFrmCadastroCidades.ConhecaObj(ListaCidades, aCidadeController);
+            oFrmCadastroCidades.ConhecaObj(CidadeSelecionado, aCidadeController);
             oFrmCadastroCidades.LimpaTxt();
             oFrmCadastroCidades.CarregaTxt();
             oFrmCadastroCidades.ShowDialog();
@@ -65,7 +65,6 @@ namespace projetoElp4
             int index = listView.SelectedIndices[0];
             ListaCidades.RemoveAt(index);
             oFrmCadastroCidades.LimpaTxt();
-            oFrmCadastroCidades.ConhecaObj(ListaCidades, aCidadeController);
             oFrmCadastroCidades.CarregaTxt();
             oFrmCadastroCidades.BloqueiaTxt();
             oFrmCadastroCidades.DesbloqueiaTxt();

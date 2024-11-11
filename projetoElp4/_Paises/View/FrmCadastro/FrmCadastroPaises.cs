@@ -25,10 +25,10 @@ namespace projetoElp4
         }
         public override void CarregaTxt()
         {
-            this.txtPais.Text = oPais?.Pais;
-            this.txtMoeda.Text = oPais?.Moeda;
-            this.txtDDI.Text = oPais?.Ddi;
-            this.txtSigla.Text = oPais?.Sigla;
+            this.txtPais.Text = oPais.Pais;
+            this.txtMoeda.Text = oPais.Moeda;
+            this.txtDDI.Text = oPais.Ddi;
+            this.txtSigla.Text = oPais.Sigla;
         }
         public override void LimpaTxt()
         {
@@ -53,16 +53,26 @@ namespace projetoElp4
         }
         public override void Salvar()
         {
-            base.Salvar();
-            oPais.Codigo = 0;
+			// Verifica se os campos obrigatórios estão preenchidos
+			if (string.IsNullOrWhiteSpace(this.txtPais.Text) ||
+				string.IsNullOrWhiteSpace(this.txtSigla.Text) ||
+				string.IsNullOrWhiteSpace(this.txtDDI.Text) ||
+				string.IsNullOrWhiteSpace(this.txtMoeda.Text))
+			{
+				MessageBox.Show("Campos obrigatórios não preenchidos.");
+				return;
+			}
+			base.Salvar();
+            oPais.Codigo = Convert.ToInt32(this.textBoxCodigo.Text);
             oPais.Pais = this.txtPais.Text;
             oPais.Sigla = this.txtSigla.Text;
             oPais.Ddi = this.txtDDI.Text;
             oPais.Moeda = this.txtMoeda.Text;
-        }
+			Close();
+		}
 
 
-    }
+	}
     
 
 
