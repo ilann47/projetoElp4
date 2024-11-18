@@ -9,7 +9,7 @@ namespace projetoElp4.MainWindow
 {
     internal class Banco
     {
-        private static string strcnn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ilan\OneDrive\sistemasDeInformacao\periodo4\ELP4\projetoElp4\projetoElp4\DB-ProjetoELP4.mdf;Integrated Security=True";
+        private static string strcnn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Ilan\OneDrive\sistemasDeInformacao\periodo4\ELP4\projetoElp4\projetoElp4\Database.mdf;Integrated Security=True";
         
 
         public static SqlConnection Abrir()

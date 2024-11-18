@@ -68,6 +68,7 @@ namespace projetoElp4
             oPais.Sigla = this.txtSigla.Text;
             oPais.Ddi = this.txtDDI.Text;
             oPais.Moeda = this.txtMoeda.Text;
+            oPaisController.Salvar(oPais);
 			Close();
 		}
 

@@ -59,13 +59,10 @@ namespace projetoElp4
         private void btnConsulta_Click(object sender, EventArgs e)
         {
 
-            //string txt = this.oFrmCadastro.btnSalvar1.Text;
-            //this.oFrmCadastro.btnSalvar1.Text = "Selecionar";
-            oFrmConsultaPaises.ConhecaObj(oEstado.OPais, null);
+             oFrmConsultaPaises.ConhecaObj(oEstado.OPais, null);
              oFrmConsultaPaises.ShowDialog();
              this.txtBoxCodPais.Text = oEstado.OPais.Codigo.ToString();
              this.textBoxPais.Text = oEstado.OPais.Pais;
-            //this.oFrmCadastro.btnSalvar1.Text = txt;
         }
     }
 }
